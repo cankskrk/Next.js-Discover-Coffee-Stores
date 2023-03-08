@@ -1,16 +1,14 @@
-import styles from "./banner.module.css";
+import bannerStyles from "./banner.module.css";
 
 function banner(props) {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>
-        <span className={styles.title1}>Coffee</span>
-        <span className={styles.title2}>Connoisseur</span>
+    <div className={bannerStyles.container}>
+      <h1 className={bannerStyles.title}>
+        <span className={bannerStyles.title1}>Coffee</span>
+        <span className={bannerStyles.title2}>Connoisseur</span>
       </h1>
-      <p className={styles.subTitle}>Discover your local coffee shops!</p>
-      <button className={styles.button} onClick={props.handleOnClick}>
-        {props.buttonText}
-      </button>
+      <p className={bannerStyles.subTitle}>Discover your local coffee shops!</p>
+      <button className={bannerStyles.button}>{props.buttonText}</button>
     </div>
   );
 }
